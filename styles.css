@@ -19,12 +19,8 @@ html {
 	font-size: 16px;
 }
 body {
-	background: linear-gradient(
-		180deg,
-		rgb(0, 0, 0),
-		rgb(50, 50, 50),
-		rgb(120, 115, 120)
-	);
+	background-color:
+		rgb(0, 0, 0);
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 }
@@ -33,15 +29,14 @@ img {
 	display: block;
 	max-width: 100%;
 	height: auto;
+	margin: auto;
 }
 
 header {
-	linear-gradient: rgb(0, 0, 0), rgb(50, 50, 50) white;
 	display: flex;
-	justify-content: space;
 	align-items: center;
 	color: whitesmoke;
-	background-color: black;
+	margin: 0;
 }
 a {
 	font-size: 1.2rem;
@@ -70,37 +65,41 @@ h2 {
 	overflow-wrap: break-word;
 }
 h2 {
+	padding: .5em;
+	text-decoration:line-through;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	color: rgb(220, 220, 220);
 	font-size: 2rem;
-	width: 200px;
-	font-weight: 100;
+	font-weight: 500;
+	width: 100vw;
+	height: 100vh;
 }
 h3 {
 	margin-top: 240px;
 	font-weight: 400;
 }
-img {
+p {
 	display: grid;
-	justify-content: center;
-	align-items: center;
 	margin: auto;
+	hyphens: auto;
+	word-wrap: break-word;
 }
 #hero {
-	background: linear-gradient(180deg, rgb(0, 0, 0), rgb(50, 50, 50));
+	margin-top: 10px;
+	background-color: black;
 	background-image: url(https://frontier-eyes.online/wp-content/uploads/2023/06/1-1-min-1-scaled-e1685676905135.jpg);
 	background-repeat: no-repeat;
 	background-position: right center;
-	background-size: 320px 220px;
+	background-size: 75%;
 	height: 100vh;
-	margin-bottom: 100px;
-}
-#soc-stat {
-	display: none;
 }
 #title {
 	border-bottom: solid white;
-	width: 75%;
-	margin: 0 0 245px 0;
-	font-size: 1 rem;
+	width: 60%;
+	margin: 0 0 230px 0;
+	font-size: 1.3rem;
 	font-family: "Arial Narrow", Arial, sans-serif;
 	font-variant: small-caps;
 	font-weight: 100;
@@ -108,24 +107,36 @@ img {
 }
 #s {
 }
-#img-div {
+#img-div,
+#img-div-2 {
+	margin: 2em;
 	color: white;
 	height: auto;
 	border: ridge 5px silver;
-	background-color: rgb(88, 88, 75);
+	box-shadow: inset 0 0 20px 10px rgb(0, 0, 0);
+	text-align: center;
 }
-
-#tribute-info {
-	background-color: rgba(220, 220, 220, 0.3);
+.tribute-info-header { 
+	width: 100vw;
+	background-color: white;
+	margin-top: 20em;
+}
+.img-bg {
 	display: flex;
-	font-size: 1.3rem;
-	margin-top: 50px;
-	padding-bottom: 10em;
-	border-left: solid 2rem black;
+	align-items: center;
+	background-color: black;
+	width: 100%;
+	height: 100vh;
+}
+#tribute-info {
+	font-size: 1.2rem;
+	margin-top: 10em;
 	color: whitesmoke;
+	margin-bottom: 10em;
 }
 .p-text {
-	padding: 1em;
+	color: wheat;
+	padding: 4em;
 }
 table,
 td,
@@ -140,35 +151,64 @@ h4 {
 	font-size: 1.6rem;
 	font-weight: 400;
 }
-#img-caption {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+h3 {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 2rem;
+ Color: darkcyan;
 }
-footer {
-	height: auto;
+.quoteblock 
+{background-color: black;
 	padding: 1em;
-	margin-top: 100px;
-	background-color: black;
-	color: white;
 }
 blockquote {
 	margin: 300px auto;
 	text-align: center;
-	padding: 3rem;
+	padding: 2rem;
 	color: ghostwhite;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
+	border: solid;
 }
-cite {
-	font-size: 1rem;
+.timeline-head{
+	background-color:  white;;
 }
-@media screen (min-width: 600px;) {
-	#hero {
-		background-image: url(https://frontier-eyes.online/wp-content/uploads/2023/06/1-1-min-1-scaled-e1685676905135.jpg);
-		background-repeat: no-repeat;
-		background-position: right center;
 
-		height: 100vh;
-		margin-bottom: 100px;
+cite {
+	font-size: 0.8rem;
+}
+footer {
+
+	color: whitesmoke;
+	background-color: black;
+}
+.foot-flex{
+}
+.links li {	
+	text-decoration: none;
+	list-style-type: none;
+}
+table {
+	background-color: rgba(120, 120, 120, .5);
+	box-shadow: 0 0 20px 0px black;
+}
+.table-container {
+	border-radius:  5px;
+	box-shadow: inset 0 0 20px 10px black;;
+	padding: 10em;
+	background-color:  rgba(29, 28, 43, 0.721);
+}
+@media screen and (min-width: 1210px) {
+	h1 {
+		font-size: 2.8rem;
+	}
+@media screen and (min-width: 900px) {
+	#img-div,
+	#img-div-2 {
+		width: 50%;
+		margin: 0 auto;
+	}
+	.p-text {
+		padding: 4em;
 	}
 }
