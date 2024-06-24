@@ -78,6 +78,12 @@ h3 {
 	margin-top: 240px;
 	font-weight: 400;
 }
+img {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
 #hero {
 	background: linear-gradient(180deg, rgb(0, 0, 0), rgb(50, 50, 50));
 	background-image: url(https://frontier-eyes.online/wp-content/uploads/2023/06/1-1-min-1-scaled-e1685676905135.jpg);
@@ -104,7 +110,6 @@ h3 {
 }
 #img-div {
 	color: white;
-	width: 100%;
 	height: auto;
 	border: ridge 5px silver;
 	background-color: rgb(88, 88, 75);
@@ -115,6 +120,7 @@ h3 {
 	display: flex;
 	font-size: 1.3rem;
 	margin-top: 50px;
+	padding-bottom: 10em;
 	border-left: solid 2rem black;
 	color: whitesmoke;
 }
@@ -147,7 +153,7 @@ footer {
 	color: white;
 }
 blockquote {
-	margin: auto;
+	margin: 300px auto;
 	text-align: center;
 	padding: 3rem;
 	color: ghostwhite;
@@ -161,7 +167,7 @@ cite {
 		background-image: url(https://frontier-eyes.online/wp-content/uploads/2023/06/1-1-min-1-scaled-e1685676905135.jpg);
 		background-repeat: no-repeat;
 		background-position: right center;
-		background-size: 700px 500px;
+
 		height: 100vh;
 		margin-bottom: 100px;
 	}
