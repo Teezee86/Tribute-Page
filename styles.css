@@ -146,6 +146,16 @@ footer {
 	background-color: black;
 	color: white;
 }
+blockquote {
+	margin: auto;
+	text-align: center;
+	padding: 3rem;
+	color: ghostwhite;
+	font-size: 1.5rem;
+}
+cite {
+	font-size: 1rem;
+}
 @media screen (min-width: 600px;) {
 	#hero {
 		background-image: url(https://frontier-eyes.online/wp-content/uploads/2023/06/1-1-min-1-scaled-e1685676905135.jpg);
