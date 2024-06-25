@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 * {
+	max-width: 100%;
 	overflow: auto;
 	padding: 0;
 	margin: 0;
@@ -15,15 +16,18 @@
 html {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
+	
 	font-size: 16px;
 }
 body {
-	background-color:
-		rgb(0, 0, 0);
+	background-image: radial-gradient(circle, 	rgb(0, 0, 0), rgba(29, 28, 43, 0.721));
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 }
+ section {
+	padding-top: 20rem;
+	padding-bottom: 20rem;
+} 
 img {
 	padding: 1em;
 	display: block;
@@ -37,6 +41,7 @@ header {
 	align-items: center;
 	color: whitesmoke;
 	margin: 0;
+	box-shadow: 0 0 20px 10px rgba(120, 120, 120, 1);
 }
 a {
 	font-size: 1.2rem;
@@ -74,25 +79,29 @@ h2 {
 	font-size: 2rem;
 	font-weight: 500;
 	width: 100vw;
-	height: 100vh;
 }
 h3 {
 	margin-top: 240px;
 	font-weight: 400;
 }
 p {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 1.3rem;
+	line-height: 1.6;
+	color: wheat;
 	display: grid;
 	margin: auto;
 	hyphens: auto;
 	word-wrap: break-word;
+	padding: 5em;
 }
 #hero {
-	margin-top: 10px;
+	border: none;
 	background-color: black;
-	background-image: url(https://frontier-eyes.online/wp-content/uploads/2023/06/1-1-min-1-scaled-e1685676905135.jpg);
+	/**background-image: ur(https://frontier-eyes.online/wp-content/uploads/2023/06/1-1-min-1-scaled-e1685676905135.jpg);
 	background-repeat: no-repeat;
 	background-position: right center;
-	background-size: 75%;
+	background-size: 75%;**/
 	height: 100vh;
 }
 #title {
@@ -105,38 +114,35 @@ p {
 	font-weight: 100;
 	letter-spacing: 5px;
 }
-#s {
+#image {
+	width: 100%;
+}
+img {
+	width: 100%;
 }
 #img-div,
 #img-div-2 {
-	margin: 2em;
-	color: white;
-	height: auto;
-	border: ridge 5px silver;
-	box-shadow: inset 0 0 20px 10px rgb(0, 0, 0);
+	margin: 0;
+	color: whitesmoke;
 	text-align: center;
 }
-.tribute-info-header { 
+.tribute-info-header {
+	font-weight: 100; 
 	width: 100vw;
-	background-color: white;
-	margin-top: 20em;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	 background-color: rgba(23, 95, 95, 0.539);
 }
-.img-bg {
-	display: flex;
-	align-items: center;
-	background-color: black;
-	width: 100%;
-	height: 100vh;
+ section {
+	padding-top: 10em;
+	padding-bottom: 10em;
 }
-#tribute-info {
-	font-size: 1.2rem;
-	margin-top: 10em;
-	color: whitesmoke;
-	margin-bottom: 10em;
+.main-section {
+	padding:0;
+	margin: 0;
 }
-.p-text {
-	color: wheat;
-	padding: 4em;
+.info-content {
+	background-color: cadetblue;
 }
 table,
 td,
@@ -163,7 +169,7 @@ h3 {
 	padding: 1em;
 }
 blockquote {
-	margin: 300px auto;
+	margin: 300px 300px;
 	text-align: center;
 	padding: 2rem;
 	color: ghostwhite;
@@ -171,19 +177,17 @@ blockquote {
 	border: solid;
 }
 .timeline-head{
-	background-color:  white;;
+	background-color:  white;
 }
-
 cite {
+	color: azure;
 	font-size: 0.8rem;
 }
 footer {
-
 	color: whitesmoke;
 	background-color: black;
 }
-.foot-flex{
-}
+
 .links li {	
 	text-decoration: none;
 	list-style-type: none;
@@ -197,6 +201,35 @@ table {
 	box-shadow: inset 0 0 20px 10px black;;
 	padding: 10em;
 	background-color:  rgba(29, 28, 43, 0.721);
+}
+.statheadimg{
+	width: 20%;
+	mix-blend-mode: color-dodge;
+	margin: 1rem auto;
+}
+.authors-note{
+	margin: 0;
+	min-height: 100%;
+	width: 100%;
+	background-color: rgb( 10, 10 ,10);
+}
+.thoughts-title {
+	background-color: azure;;
+}
+.author-thoughts{
+	display: grid;
+	text-justify: newspaper;
+	hyphens: auto;
+}
+a {
+	color: cadetblue;
+}
+#The-Death-of-Socrates {
+	padding: 0;
+}
+.interactive {
+	margin: auto;
+	padding:  0;
 }
 @media screen and (min-width: 1210px) {
 	h1 {
