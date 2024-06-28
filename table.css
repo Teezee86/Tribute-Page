@@ -1,0 +1,32 @@
+.border-line{
+    border: solid silve;
+    margin: 1em auto;
+}
+.table {
+    background-color: black;;
+    display: flex;
+    justify-content: center;
+}
+ul{ justify-self: center;
+    align-self: center;
+    padding: 1em;
+}
+
+li {
+    width: 100%;
+    color: wheat;
+    font-size: 1.3rem;;
+    background-color: grey;
+    box-shadow: 0 0 1px 5px grey;
+    margin: 1em;
+    border-radius: 5px;
+    padding: 1em; 
+    list-style-type: none;
+}
+.left-tb {
+    padding: 1.2em;
+    margin: 2em;
+}
+.rw-tb{
+   
+}
